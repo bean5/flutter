@@ -151,7 +151,7 @@ class TextFormField extends FormField<String> {
        assert(textAlign != null),
        assert(autofocus != null),
        assert(readOnly != null),
-       assert(obscuringCharacter != null && obscuringCharacter.length == 1),
+       assert(obscuringCharacter != null && obscuringCharacter.characters.length == 1),
        assert(obscureText != null),
        assert(autocorrect != null),
        assert(enableSuggestions != null),

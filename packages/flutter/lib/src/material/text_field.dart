@@ -331,7 +331,7 @@ class TextField extends StatefulWidget {
   }) : assert(textAlign != null),
        assert(readOnly != null),
        assert(autofocus != null),
-       assert(obscuringCharacter != null && obscuringCharacter.length == 1),
+       assert(obscuringCharacter != null && obscuringCharacter.characters.length == 1),
        assert(obscureText != null),
        assert(autocorrect != null),
        smartDashesType = smartDashesType ?? (obscureText ? SmartDashesType.disabled : SmartDashesType.enabled),

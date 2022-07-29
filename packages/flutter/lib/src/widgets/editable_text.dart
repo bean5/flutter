@@ -529,7 +529,7 @@ class EditableText extends StatefulWidget {
     this.enableIMEPersonalizedLearning = true,
   }) : assert(controller != null),
        assert(focusNode != null),
-       assert(obscuringCharacter != null && obscuringCharacter.length == 1),
+       assert(obscuringCharacter != null && obscuringCharacter.characters.length == 1),
        assert(obscureText != null),
        assert(autocorrect != null),
        smartDashesType = smartDashesType ?? (obscureText ? SmartDashesType.disabled : SmartDashesType.enabled),
